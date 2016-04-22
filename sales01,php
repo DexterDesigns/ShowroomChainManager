@@ -1,0 +1,29 @@
+<?php
+$Invoice_No=$_POST["InvoiceNo"];
+$P_Model=$_POST["P_Model"];
+
+$No_Of_Items=$_POST["NoOfItems"];
+$Invoice_Date=$_POST["InvoiceDate"];
+
+
+//get connect with database
+$con=mysql_connect("localhost","shaznaga_abc","abc456");
+mysql_select_db("shaznaga_abc");
+//END
+
+$sql = "INSERT INTO `sales` VALUES ('$Invoice_No','$P_Model', '$No_Of_Items','$Invoice_Date')";
+
+
+
+if (mysql_query($sql)){
+	echo"New record added successfully </br>";
+}else{
+	echo "Error  <br/>", mysql_error($con);
+}
+mysql_close($con);	
+
+?>
+<html><body>
+<button><a href="StoreRoom.php">OK</a></button>
+</body>
+</html>
