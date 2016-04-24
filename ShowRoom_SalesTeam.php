@@ -9,3 +9,5 @@
 <button><a href="LogOut.php">Log Out</a></button>
 </body>
 </html>
+<?php
+?>
