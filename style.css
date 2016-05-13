@@ -6,7 +6,7 @@ body{
   line-height: 1.7em;
   font-size: 14px;
   background-color: #222124;
-  background-color: #F4F1EA;
+  color:#000000;
 
   border: 5px solid #CCC \9;
   -webkit-box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.50);
@@ -59,6 +59,7 @@ font: bold;
 	font-size:1.12em;
 	text-shadow:#FFFFFF;
 	volume:loud;
+	text-align:center;
 
 }
 
@@ -77,6 +78,7 @@ font-size:1.25em;
 
 .account_desc{
 	float:right;
+	font-size: 11px;
 }
 .account_desc li{
 	display:inline;
